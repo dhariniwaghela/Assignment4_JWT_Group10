@@ -1,3 +1,7 @@
+//Group 10 
+//Dharini Vaghela -200533763
+//Nancy Dungrani-200530960
+
 require("dotenv").config();
 require("../database/db").connect();
 const express = require("express");
