@@ -129,7 +129,7 @@ app.get ("/getallbooks", async (req, res) => {
 });
 
 
-app.put("/updateBook" , async (req, res) => {
+app.put("/updateBook/:id" , async (req, res) => {
   try {
       const book = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true });
       res.json(book);
